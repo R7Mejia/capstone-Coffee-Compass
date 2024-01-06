@@ -1,0 +1,376 @@
+body {
+  font-family: "Times New Roman", serif; /* Vintage font for a classic feel */
+  background-color: #f5f4e9; /* Warm beige background */
+  color: #333; /* Dark brown text for readability */
+}
+.middle{
+  background-color: #fff;
+}
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4c3527; /* Rich brown for headings */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* White background for content */
+  border-radius: 10px; /* Subtle rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  display: flex; /* Added for main layout */
+  flex-direction: column; /* Added for main layout */
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+}
+
+.container:before {
+  content: '';
+  position: absolute;
+  top: -23px;
+  left: -23px;
+  right: -23px;
+  bottom: -23px;
+  background: url('./images/coffee-beans.png') repeat; 
+  border-radius: 10px; 
+  z-index: -1; /* Behind the container content */
+}
+
+
+.search-bar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background-color: #4c3527; /* Rich brown for buttons */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2.5px black solid;
+}
+
+.featureImg {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 3px solid #ddd; /* Light gray border for separation */
+}
+
+.featured p {
+  width: 400px;
+  line-height: 1.5; /* Enhanced readability */
+}
+
+.featured button {
+  background-color: #4c3527;
+  color: #fff;
+}
+
+.nearby {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem; /* Title-like for nearby coffee shops */
+  font-weight: bold; 
+  border: 2.5px black solid;
+}
+.recommended{
+  border: 2.5px black solid;
+}
+.popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 30%; /* Constrained width for aside layout */
+  order: 2; /* Positioned after main content */
+  border: 2.5px black solid;
+}
+
+
+.container-two {
+    max-width: 800px;
+    margin: auto;
+    border: 2.5px black solid;
+}
+
+.header-two {
+    font-size: 24px;
+}
+
+.info {
+    font-size: 14px;
+}
+
+.menu table {
+     width: 100%;
+     border-collapse: collapse;
+ }
+
+.menu th, .menu td {
+     padding: 10px;
+     border-bottom: 1px solid #ccc;
+ }
+
+.order-button {
+     margin-top :20px; 
+ }
+
+.reviews{
+      margin-top :20px; 
+      border: 2.5px black solid;
+ }
+
+
+ /* Style the container element
+.container-three{
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border: 2.5px black solid;
+} */
+.cart, .payment, .confirmation{
+  border: 2.5px black solid;
+}
+/* Style the headings */
+h1 {
+  text-align: center;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style the table cells */
+td, th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style the remove button */
+.remove {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the checkout button */
+.checkout {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Style the form elements */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the form labels */
+label {
+  width: 30%;
+  margin: 10px 0;
+}
+
+/* Style the form inputs */
+input {
+  width: 60%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style the submit button */
+.submit {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Style the confirmation message */
+.confirmation {
+  text-align: center;
+  margin: 10px;
+}
+
+
+
+/* .nearby {
+  margin-top: 50px;
+}
+
+.recommended {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recommended img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.recommended h3 {
+  color: #333;
+  margin-top: 15px;
+}
+
+.recommended p {
+  color: #555;
+}
+
+.recommended button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.popular {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.drink {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.drink h3 {
+  color: #333;
+  margin-top: 15px;
+}
+
+.drink p {
+  color: #555;
+}
+
+.drink button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+} */
+
+
+
+
+
+
+
+/*body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d8d2d2;
+  border: black 1px solid;
+  padding: 3px;
+  margin: 0 13px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-bar img {
+  height: 30px;
+  margin-right: 20px; /* Adjust spacing as needed */
+/*}
+
+.search-bar nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  /* Move nav items to the right */
+  /*list-style: none;/*
+  margin: 0;
+  padding: 0;
+}
+
+.search-bar nav li {
+  padding: 10px 15px;
+  margin: 0 10px;
+  display: inline-block;
+  &:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+  }
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+*/
